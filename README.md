@@ -25,18 +25,9 @@
 
 ![5](https://github.com/Foxbeerxxx/virt2/blob/main/img/img5.png)
 
-6. 
+6. `Инициализирую профиль с помощью yc init`
 
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-
-
+![6](https://github.com/Foxbeerxxx/virt2/blob/main/img/img6.png)
 
 
 ---
