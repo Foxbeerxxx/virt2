@@ -17,9 +17,14 @@
 
 ![3](https://github.com/Foxbeerxxx/virt2/blob/main/img/img3.png)
 
+4. `Ставлю плагин от Яндекс Облако по инструкции`
 
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
+![4](https://github.com/Foxbeerxxx/virt2/blob/main/img/img4.png)
+
+5. `Проверяю, что yc установлен корректно`
+
+![5](https://github.com/Foxbeerxxx/virt2/blob/main/img/img5.png)
+
 6. 
 
 ```
