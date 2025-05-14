@@ -34,6 +34,8 @@ source ~/.profile
 exec -l $SHELL
 # Проверяем версию
 packer --version
+#  https://yandex.cloud/ru/docs/tutorials/infrastructure-management/packer-quickstart
+
 ```
 4. `Ставлю плагин от Яндекс Облако по инструкции`
 
@@ -129,4 +131,6 @@ packer build mydebian.json.pkr.hcl
 
 4. `Подключаемся по ssh  и проверяем версии docker, htop и tmux`
 ![12](https://github.com/Foxbeerxxx/virt2/blob/main/img/img12.png)
+
+5. `Удаляем и чистим YC`
 
