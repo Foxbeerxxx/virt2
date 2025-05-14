@@ -68,22 +68,41 @@ vagrant destroy -f
 
 ### Задание 3
 
-`Приведите ответ в свободной форме........`
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
+1. `Создаю сеть и подсеть в YC`
+
+```
+alexey@dell:~/virt2/src$ yc vpc network create --name net --labels my-label=netology --description "My network"
+id: enpvtmvhdv4vn71dskn2
+folder_id: b1gse67sen06i8u6ri78
+created_at: "2025-05-14T21:18:59Z"
+name: net
+description: My network
+labels:
+  my-label: netology
+default_security_group_id: enpt3pehiaufp3pmm4ai
+
+alexey@dell:~/virt2/src$ yc vpc subnet create --name my-subnet-a --zone ru-central1-a --range 10.1.2.0/24 --network-name net --description "My subnet"
+id: e9bd3ro2jm1n2329qntl
+folder_id: b1gse67sen06i8u6ri78
+created_at: "2025-05-14T21:23:52Z"
+name: my-subnet-a
+description: My subnet
+network_id: enpvtmvhdv4vn71dskn2
+zone_id: ru-central1-a
+v4_cidr_blocks:
+  - 10.1.2.0/24
+
+```
+![10](https://github.com/Foxbeerxxx/virt2/blob/main/img/img10.png)
+
 2. `Заполните здесь этапы выполнения, если требуется ....`
 3. `Заполните здесь этапы выполнения, если требуется ....`
 4. `Заполните здесь этапы выполнения, если требуется ....`
 5. `Заполните здесь этапы выполнения, если требуется ....`
 6. 
 
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
+
 
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота](ссылка на скриншот)`
