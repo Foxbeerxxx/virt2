@@ -128,5 +128,5 @@ packer build mydebian.json.pkr.hcl
 ![112](https://github.com/Foxbeerxxx/virt2/blob/main/img/img112.png)
 
 4. `Подключаемся по ssh  и проверяем версии docker, htop и tmux`
-![112](https://github.com/Foxbeerxxx/virt2/blob/main/img/img112.png)
+![12](https://github.com/Foxbeerxxx/virt2/blob/main/img/img12.png)
 
