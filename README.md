@@ -17,6 +17,24 @@
 
 ![3](https://github.com/Foxbeerxxx/virt2/blob/main/img/img3.png)
 
+```
+# Создаем директорию и скачиваем дистрибутив
+mkdir -p ~/packer
+wget https://hashicorp-releases.yandexcloud.net/packer/1.11.2/packer_1.11.2_linux_amd64.zip -P ~/packer
+
+# Распаковываем
+unzip ~/packer/packer_1.11.2_linux_amd64.zip -d ~/packer
+
+# Удаляем архив (опционально)
+rm ~/packer/packer_1.11.2_linux_amd64.zip
+
+echo 'export PATH="$PATH:/home/alexey/packer"' >> ~/.profile
+source ~/.profile
+# Перезапускаем оболочку (альтернативный способ)
+exec -l $SHELL
+# Проверяем версию
+packer --version
+```
 4. `Ставлю плагин от Яндекс Облако по инструкции`
 
 ![4](https://github.com/Foxbeerxxx/virt2/blob/main/img/img4.png)
@@ -96,35 +114,19 @@ v4_cidr_blocks:
 ```
 ![10](https://github.com/Foxbeerxxx/virt2/blob/main/img/img10.png)
 
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
-
-### Задание 4
-
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
+2. `Проверяем валидацию и запускаем`
 ```
-Поле для вставки кода...
-....
-....
-....
-....
-```
+packer validate mydebian.json.pkr.hcl 
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+packer build mydebian.json.pkr.hcl
+```
+![11](https://github.com/Foxbeerxxx/virt2/blob/main/img/img11.png)
+
+3. `После того как успешно образ создан, заходим в вебморду YC и создаем ВМ `
+
+![111](https://github.com/Foxbeerxxx/virt2/blob/main/img/img111.png)
+![112](https://github.com/Foxbeerxxx/virt2/blob/main/img/img112.png)
+
+4. `Подключаемся по ssh  и проверяем версии docker, htop и tmux`
+![112](https://github.com/Foxbeerxxx/virt2/blob/main/img/img112.png)
+
